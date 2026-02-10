@@ -1,0 +1,52 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'com.autoapi'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+    withSourcesJar()
+    withJavadocJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'com.google.code.gson:gson:2.11.0'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+
+            pom {
+                name = 'Auto API Client'
+                description = 'Java client for auto-api.com — car listings API across multiple marketplaces.'
+                url = 'https://github.com/autoapicom/auto-api-java'
+
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'https://opensource.org/licenses/MIT'
+                    }
+                }
+
+                scm {
+                    url = 'https://github.com/autoapicom/auto-api-java'
+                    connection = 'scm:git:git://github.com/autoapicom/auto-api-java.git'
+                }
+
+                // Keywords for discoverability
+                // encar api, mobile.de api, autoscout24 api, che168 api,
+                // dongchedi api, guazi api, dubicars api, dubizzle api
+            }
+        }
+    }
+}
