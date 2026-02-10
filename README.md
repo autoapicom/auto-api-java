@@ -4,9 +4,9 @@
 [![Java](https://img.shields.io/badge/Java-11%2B-blue)](https://openjdk.org)
 [![License](https://img.shields.io/github/license/autoapicom/auto-api-java)](LICENSE)
 
-Java client for [auto-api.com](https://auto-api.com) — car listings API across multiple marketplaces.
+Java client for [auto-api.com](https://auto-api.com). Pulls car listings from 8 marketplaces — encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle.
 
-One API to access car listings from 8 marketplaces: encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle. Search offers, track price changes, and get listing data in a unified format.
+Java 11+, single dependency (Gson). Uses `java.net.http.HttpClient` under the hood.
 
 ## Installation
 
@@ -79,7 +79,7 @@ Map<String, Object> info = client.getOfferByUrl(
 
 ### Decode offer data
 
-Offer data varies between sources, so it's stored as Gson's `JsonElement`. Decode into `OfferData` or your own class:
+The offer `data` field is a Gson `JsonElement` — the actual fields depend on the marketplace. Deserialize to `OfferData` or your own class:
 
 ```java
 Gson gson = new Gson();
