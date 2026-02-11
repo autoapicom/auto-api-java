@@ -42,6 +42,11 @@ pip-log.txt
 .pytest_cache/
 .ruff_cache/
 
+# Java
+.gradle/
+gradle.properties
+*.class
+
 # Go
 bin/
 vendor/
