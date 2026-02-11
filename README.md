@@ -2,7 +2,7 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.autoapi/auto-api-client)](https://central.sonatype.com/artifact/com.autoapi/auto-api-client)
 [![Java](https://img.shields.io/badge/Java-11%2B-blue)](https://openjdk.org)
-[![License](https://img.shields.io/github/license/autoapicom/auto-api-java)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Java client for [auto-api.com](https://auto-api.com). Pulls car listings from 8 marketplaces — encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle.
 
