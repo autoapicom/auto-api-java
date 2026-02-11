@@ -20,6 +20,7 @@ OffersResponse offers = client.getOffers("encar", new OffersParams().page(1));
 
 ```bash
 gradle build
+gradle test
 gradle javadoc
 cd examples && gradle run
 ```
