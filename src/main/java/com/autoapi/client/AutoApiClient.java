@@ -38,7 +38,7 @@ public class AutoApiClient {
      * @param apiKey API key from auto-api.com
      */
     public AutoApiClient(String apiKey) {
-        this(apiKey, "https://auto-api.com", "v2");
+        this(apiKey, "https://api1.auto-api.com", "v2");
     }
 
     /**
