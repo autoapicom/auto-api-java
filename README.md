@@ -1,6 +1,5 @@
 # auto-api-client-java
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.autoapi/auto-api-client)](https://central.sonatype.com/artifact/com.autoapi/auto-api-client)
 [![Java](https://img.shields.io/badge/Java-11%2B-blue)](https://openjdk.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
